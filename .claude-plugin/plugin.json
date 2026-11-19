@@ -1,0 +1,6 @@
+{
+  "name": "motaibi-motion",
+  "version": "1.0.0",
+  "description": "Motion-graphics montage for Arabic short videos with Claude Code: tool setup, learning your taste from reference videos, building the montage with HyperFrames, and revising by request.",
+  "author": { "name": "Abedelrahman Al-Otaibi", "url": "https://github.com/Abedelrahman97" }
+}

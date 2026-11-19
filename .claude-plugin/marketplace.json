@@ -1,0 +1,7 @@
+{
+  "name": "motaibi-motion-marketplace",
+  "owner": { "name": "Abedelrahman Al-Otaibi" },
+  "plugins": [
+    { "name": "motaibi-motion", "source": "./", "description": "Arabic motion-graphics montage skills for Claude Code" }
+  ]
+}
