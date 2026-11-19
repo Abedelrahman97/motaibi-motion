@@ -1,0 +1,34 @@
+{
+  "name": "paper-grid-explainer",
+  "summary_ar": "شرح بالموشن جرافيك: خلفية ورق مربعات فاتحة، كلمات مهمة داخل مربعات خضراء، بطاقات داكنة، أيقونات بسيطة تُبنى تدريجياً، شريط تقدّم عمودي يسار، واسم الفصل في الأسفل. بدون قص حاد.",
+  "canvas": {"w": 1080, "h": 1920, "fps": 30, "bg": "#F1F1E8", "texture": "grid", "grid_color": "#DEE3D8", "grid_px": 60, "vignette": true},
+  "palette": {"text": "#0F2E2A", "highlight": "#1EE08A", "card_dark": "#0A3B37", "line": "#138E58", "card_light": "#FFFFFF", "muted": "#7F9A90"},
+  "type": {"arabic": "Tajawal", "latin": "Tajawal", "caption_px": 96, "weight": 800, "label_px": 34},
+  "captions": {
+    "position": "top", "y_px": 330, "max_words": 4,
+    "boxed_keywords": true, "box_radius": 22, "box_padding_px": [10, 26],
+    "highlight_rule": "one to three key words per caption (the noun/verb that carries the meaning) sit in mint boxes; the rest stays plain dark text",
+    "enter": "each word pops in 120ms, slight scale 0.9→1",
+    "exit": "fade 150ms as the next caption starts; the next caption may appear faded for 2–3 frames before"
+  },
+  "rhythm": {"hard_cuts": false, "caption_change_s": 1.0, "scene_build": "incremental: each chapter keeps one central illustration that gains elements as the VO mentions them"},
+  "frame": {
+    "progress_bar": "left-vertical line x=42px from y=520 to y=1460, mint filled part grows with time, ring dot at the head",
+    "chapter_pill": "bottom-center dark pill (card_dark) with white Arabic label, y≈1540",
+    "chapters": true
+  },
+  "scene_patterns": [
+    "metric card: white card with bars rising (views, growth)",
+    "player card: dark rounded rectangle with play icon and a mint progress line + numbered steps 1-2-3",
+    "app card: white window with tabs (Chat / Code) and a logo",
+    "folder: mint folder icon, files flying in",
+    "prompt card: dark card with mint 'برومبت' chip and grey text lines",
+    "hub: a central mark with spokes to tool tiles (white rounded squares with a letter + label) and a counter n/N",
+    "phones fan: 3-4 dark phone cards with play icons, one highlighted",
+    "style card: palette dots + 'Aa' sample",
+    "edit bubble: white chip 'غيّر هذا الجزء' + dark button 'تم التعديل' + before/after cards",
+    "CTA: big white card with the comment keyword"
+  ],
+  "icons": {"style": "flat, rounded corners, two-tone green; letters inside tiles instead of third-party logos unless the user supplies them in assets/"},
+  "audio": {"music": "low, soft bed under VO (-22 LUFS relative)", "sfx": "soft pop on each caption, whoosh on chapter change"}
+}
